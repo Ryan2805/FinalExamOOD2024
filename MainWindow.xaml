@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Booking Details" HorizontalAlignment="Left" Margin="34,26,0,0" VerticalAlignment="Top" Width="139" Height="38" FontFamily="Arial" FontSize="18"/>
+
+        <DatePicker HorizontalAlignment="Left" Margin="186,33,0,0" VerticalAlignment="Top"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="34,95,356,95"/>
+        <Label Content="New Booking" HorizontalAlignment="Left" Margin="617,46,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18"/>
+        <DatePicker HorizontalAlignment="Left" Margin="624,95,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="624,142,0,0" TextWrapping="Wrap" Text="Number of customers" VerticalAlignment="Top" Width="137" FontFamily="Arial"/>
+        <TextBox HorizontalAlignment="Left" Margin="624,175,0,0" TextWrapping="Wrap" Text="CustomerName" VerticalAlignment="Top" Width="137" FontFamily="Arial" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="624,0,0,0" TextWrapping="Wrap" Text="Contact Number" VerticalAlignment="Center" Width="137" FontFamily="Arial" FontSize="14"/>
+        <Button x:Name="CustomerSearchbtn" Content="Customer Search" HorizontalAlignment="Left" Height="22" Margin="624,271,0,0" VerticalAlignment="Top" Width="137" FontFamily="Arial" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="42,384,0,0" TextWrapping="Wrap" Text="Capacity :  Bookings 10: Avalibable: " VerticalAlignment="Top" Width="226" FontFamily="Arial"/>
+        <Button x:Name="BookingDelbtn" Content="Delete Booking" HorizontalAlignment="Left" Margin="370,380,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+
     </Grid>
 </Window>
