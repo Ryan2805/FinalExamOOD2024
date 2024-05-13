@@ -12,11 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 /*Name: Ryan Daly 
  * Student Number: S00237889
  * May Exam Object Oriented Programming
- * Link to GitHub Repo : https://github.com/Ryan2805/OODMayExam
- * 
+ * Link to GitHub Repo : https://github.com/Ryan2805/FinalExamOOD2024   ,    https://github.com/Ryan2805/OODMayExam
+ * created 2 github repos by accident, you are added as a collaborator on both. 
  * 
  * 
 */
@@ -30,6 +31,21 @@ namespace FinalExamOOD
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+        private void LoadBookings()
+        {
+            try
+            {
+                var customers = db.Customers.ToList();
+                listBoxCustomers.ItemsSource = "Customers";
+                listBoxCustomers.DisplayMemberPath = "Customers";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Displaying Bookings: " + ex.Message);
+            }
+        }
+
     }
 }
